@@ -154,7 +154,12 @@ chatdb/
    - Designed APIs for dataset uploads, schema exploration, query execution, and NLQ generation.
 
 ---
+## User Interface
+![image](https://github.com/user-attachments/assets/c77d81aa-997c-43ec-a38a-4b745be64f3a)
 
+![image](https://github.com/user-attachments/assets/5a42f716-81d5-465f-b4b1-5857570c2b5a)
+
+---
 ## Future Improvements
 
 - Add support for more databases like PostgreSQL or SQLite.
