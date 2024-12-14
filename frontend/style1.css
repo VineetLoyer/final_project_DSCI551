@@ -1,0 +1,358 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  h1 {
+    text-align: center;
+    color: #990000; /* USC Cardinal */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  h2, h3 {
+    color: #990000; /* USC Cardinal */
+  }
+  
+  /* Buttons Styling */
+  button, input[type="submit"] {
+    background-color: #ffc72c; /* USC Gold */
+    color: #2b2b2b; /* Dark text */
+    border: 1px solid #990000; /* USC Cardinal */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button:hover, input[type="submit"]:hover {
+    background-color: #e6ac00;
+    border-color: #7a0000;
+  }
+  
+  /* Input and Select Styling */
+  input[type="file"],
+  input[type="text"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Table Styling */
+  .table-container {
+    max-height: 400px;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    border: 1px solid #990000; /* USC Cardinal */
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 5px;
+  }
+  
+  /* Table Design */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  th {
+    position: sticky;
+    top: 0; /* Sticky header */
+    background-color: #990000; /* USC Cardinal */
+    color: #000000; /* White text for header */
+    padding: 10px;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Success and Error Messages */
+  #response-message {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .success {
+    color: #28a745;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  
+  /* Query Results */
+  #query-results {
+    max-height: 300px;
+    max-width: 100%;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Sample Queries Section */
+  #sample-queries {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #990000; /* USC Cardinal */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  #sample-queries h2 {
+    color: #990000;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  /* Query Card Styling */
+  .query-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .query-card h4 {
+    color: #990000;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  
+  .query-section {
+    margin-bottom: 15px;
+  }
+  
+  .query-section strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .query-section pre {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+  
+  .query-section code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+  }
+  
+  .query-section p {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  /* Feedback Message Styling */
+  .db-type-message {
+    background-color: #f8f9fa;
+    color: #990000;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+  }
+  
+  /* Construct Selector Styling */
+  .construct-selector {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .construct-selector label {
+    font-weight: bold;
+    color: #990000;
+    margin-bottom: 0;
+  }
+  
+  .construct-selector select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-width: 200px;
+  }
+  
+  .construct-selector button {
+    background-color: #990000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .construct-selector button:hover {
+    background-color: #800000;
+  }
+  
+  #sample-queries-container {
+    margin-top: 20px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    table {
+      font-size: 12px;
+    }
+  
+    button, input[type="submit"] {
+      font-size: 14px;
+    }
+  
+    .query-card {
+      padding: 15px;
+    }
+  }
+  .query-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.query-results-table th,
+.query-results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.query-results-table th {
+    background-color: #990000; /* USC Cardinal */
+    color: white;
+}
+
+.query-results-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.query-results-table tr:hover {
+    background-color: #ddd;
+}
+
+.query-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.query-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.query-header {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.query-number {
+    font-weight: bold;
+    color: #666;
+}
+
+.query-description {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.query-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nl-query {
+    background-color: #f8f9fa;
+    padding: 0.8rem;
+    border-radius: 4px;
+}
+
+.query-section {
+    position: relative;
+}
+
+.query-code {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.copy-query-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.copy-query-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.error-message {
+    color: #dc3545;
+    padding: 1rem;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-top: 1rem;
+}

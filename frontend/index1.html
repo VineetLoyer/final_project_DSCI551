@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatDB</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to ChatDB</h1>
+        <p>Upload your dataset and start querying databases effortlessly!</p>
+
+        <!-- Dataset Upload Section -->
+        <section id="upload-section">
+            <h2>Upload Dataset</h2>
+            <form id="upload-form">
+                <div>
+                    <label for="dataset">Upload Dataset (CSV or JSON):</label>
+                    <input type="file" id="dataset" accept=".csv,.json" required>
+                </div>
+                <div>
+                    <label for="table-name">Table/Collection Name:</label>
+                    <input type="text" id="table-name" placeholder="Enter name" required>
+                </div>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <!-- Database Selection Section -->
+        <section id="db-selection">
+            <h2>Select Database</h2>
+            <div>
+                <label for="db-type">Database Type:</label>
+                <select id="db-type">
+                    <option value="mysql">MySQL</option>
+                    <option value="mongodb">MongoDB</option>
+                </select>
+            </div>
+            <div>
+                <label for="table-dropdown">Table/Collection:</label>
+                <select id="table-dropdown"></select>
+            </div>
+        </section>
+
+        <!-- Schema & Preview Section -->
+        <section id="schema-preview">
+            <h2>Schema & Preview</h2>
+            <div class="button-group">
+                <button id="load-schema">Load Schema</button>
+                <button id="load-preview">Load Preview</button>
+            </div>
+            <div id="response-message"></div>
+            <div>
+                <h3>Schema</h3>
+                <pre id="schema-output"></pre>
+            </div>
+            <div>
+                <h3>Preview</h3>
+                <div class="table-container">
+                    <table>
+                        <thead id="preview-header"></thead>
+                        <tbody id="preview-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sample Queries Section -->
+        <section id="sample-queries">
+            <h2>Sample Queries</h2>
+            <div class="construct-selector">
+                <label for="sql-construct">Select Query Construct:</label>
+                <select id="sql-construct"></select>
+                <button id="generate-construct-queries">Generate Sample Queries</button>
+            </div>
+            <div id="sample-queries-container"></div>
+        </section>
+
+        <!-- Execute Query Section -->
+        <section id="execute-query-section">
+            <h2>Execute Query</h2>
+            <div>
+                <label for="query-input">Enter Query:</label>
+                <textarea id="query-input" rows="4" placeholder="Write your SQL/MongoDB query here"></textarea>
+                <button id="execute-query">Execute</button>
+            </div>
+            <div id="query-results"></div> <!-- Separate output container for query results -->
+        </section>
+        
+        <!-- Natural Language Query Section -->
+        <section id="nl-query-section">
+            <h2>Natural Language Query</h2>
+            <p>Use natural language to interact with your database. Example: "Show all rows where age is 25."</p>
+            <input type="text" id="nl-query" placeholder="Enter your natural language query">
+            <button id="nl-query-submit">Execute</button>
+            <div id="nl-query-results"></div> <!-- Separate output container for NLQ results -->
+        </section>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>
