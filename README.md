@@ -61,8 +61,8 @@ ChatDB is a full-stack application that simplifies database interaction. It allo
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo/chatdb.git
-   cd chatdb
+   git clone https://github.com/VineetLoyer/final_project_DSCI551.git
+   cd final_project_DSCI551
    ```
 
 2. **Set Up Virtual Environment**
